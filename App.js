@@ -1,19 +1,28 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import { StyleSheet, Text, View } from "react-native";
+import Home from "./Screens/Home";
+import { AppLoading } from "expo";
+import * as Font from "expo-font";
+const getFonts = () => {
+    return Font.loadAsync({
+        Montserrat: require("./assets/fonts/Montserrat/Montserrat-Regular.ttf"),
+        "Montserrat-bold": require("./assets/fonts/Montserrat/Montserrat-Bold.ttf"),
+        "Montserrat-light": require("./assets/fonts/Montserrat/Montserrat-Light.ttf"),
+        "Montserrat-thin": require("./assets/fonts/Montserrat/Montserrat-Thin.ttf")
+    });
+};
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
+    const [fontsLoaded, setfontsLoaded] = useState(false);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    if (fontsLoaded) {
+        return <Home />;
+    } else {
+        return (
+            <AppLoading
+                startAsync={getFonts}
+                onFinish={() => setfontsLoaded(true)}
+            />
+        );
+    }
+}
