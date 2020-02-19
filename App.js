@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import Home from "./Screens/Home";
 import { AppLoading } from "expo";
 import * as Font from "expo-font";
+
 const getFonts = () => {
     return Font.loadAsync({
         Montserrat: require("./assets/fonts/Montserrat/Montserrat-Regular.ttf"),
