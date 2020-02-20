@@ -13,12 +13,21 @@ export default Navigator = () => {
                 <Stack.Screen
                     name="Home"
                     component={Home}
-                    options={{ title: "Home" }}
+                    options={{
+                        title: "Home",
+                        headerStyle: {
+                            backgroundColor: "pink",
+                            height: 60,
+                            headerTintColor: "#444"
+                        }
+                    }}
                 />
                 <Stack.Screen
                     name="ReviewDetails"
                     component={ReviewDetails}
-                    options={{ title: "ReviewDetails" }}
+                    options={{
+                        title: "ReviewDetails"
+                    }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
