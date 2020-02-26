@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Home from "./Screens/Home";
 import { AppLoading } from "expo";
 import * as Font from "expo-font";
-import Navigator from "./Routes/HomeStack";
+import Navigator from "./Routes/Drawer";
 
 const getFonts = () => {
     return Font.loadAsync({
