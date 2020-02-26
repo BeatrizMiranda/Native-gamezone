@@ -7,6 +7,7 @@ import {
     TouchableOpacity
 } from "react-native";
 import globalStyle from "../Styles/global.js";
+import Card from "../Shared/Card";
 
 export default function Home({ navigation }) {
     // const pressHalddler = () => {
