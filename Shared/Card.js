@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 
-export default Card = props => {
+export const Card = props => {
     return (
         <View style={style.card}>
             <View style={style.cardContent}>{props.children}</View>
@@ -25,3 +25,5 @@ const style = StyleSheet.create({
         marginVertical: 10
     }
 });
+
+export default Card;

@@ -11,7 +11,13 @@ function AboutStack() {
             screenOptions={({ navigation, route }) => ({
                 headerTitle: () => (
                     <Header navigation={navigation} route={route} />
-                )
+                ),
+                headerTintColor: "#333",
+                headerTitleAlign: "center",
+                headerStyle: {
+                    backgroundColor: "pink",
+                    height: 80
+                }
             })}
         >
             <Stack.Screen

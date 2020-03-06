@@ -11,7 +11,11 @@ function HomeStack() {
             initialRouteName="Home"
             screenOptions={({ navigation }) => ({
                 headerTintColor: "#333",
-                headerStyle: { backgroundColor: "pink", height: 80 }
+                headerTitleAlign: "center",
+                headerStyle: {
+                    backgroundColor: "pink",
+                    height: 80
+                }
             })}
         >
             <Stack.Screen

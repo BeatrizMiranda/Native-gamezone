@@ -19,7 +19,7 @@ export default function Home({ navigation }) {
         { title: "Something", rating: 2, body: "Lorem ipsum", key: "3" }
     ]);
     return (
-        <View style={globalStyles.container}>
+        <View style={globalStyles.styles.container}>
             {/* <Button title="Review Details" onPress={pressHalddler} /> */}
             <FlatList
                 data={reviews}
