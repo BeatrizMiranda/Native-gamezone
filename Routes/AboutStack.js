@@ -15,7 +15,7 @@ function AboutStack() {
                 headerTintColor: "#333",
                 headerTitleAlign: "center",
                 headerStyle: {
-                    backgroundColor: "pink",
+                    backgroundColor: "#fff",
                     height: 80
                 }
             })}
@@ -25,9 +25,6 @@ function AboutStack() {
                 component={About}
                 options={{
                     title: "About",
-                    headerStyle: {
-                        backgroundColor: "pink"
-                    },
                     headerTintColor: "#333"
                 }}
             />

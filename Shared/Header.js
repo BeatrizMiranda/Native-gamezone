@@ -15,7 +15,7 @@ export default function Header({ navigation, route }) {
                 name="menu"
                 size={28}
                 onPress={openMenu}
-                style={styles.icon}
+                style={styles.hamburguer}
             />
             <View style={styles.headerTitle}>
                 <Image
@@ -42,15 +42,18 @@ const styles = StyleSheet.create({
     headerImage: {
         width: 36,
         height: 36,
-        marginHorizontal: 10
+        marginRight: 10
     },
     headerText: {
         fontWeight: "bold",
         fontSize: 20,
         color: "#333",
-        letterSpacing: 1
+        letterSpacing: 1,
+        marginRight: '35%'
     },
-    icon: {
-        marginRight: 10
+    hamburguer: {
+        marginHorizontal: 30,
+        marginLeft: 20,
+        marginRight: 70
     }
 });

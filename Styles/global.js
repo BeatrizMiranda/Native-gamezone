@@ -3,8 +3,10 @@ import { StyleSheet } from "react-native";
 const globalStyles = {
     styles: StyleSheet.create({
         container: {
-            padding: 20,
-            flex: 1
+            paddingHorizontal: 20,
+            paddingVertical: 30,
+            flex: 1,
+            position: "relative"
         },
         paragraph: {
             marginVertical: 8,

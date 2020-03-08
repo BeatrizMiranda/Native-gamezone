@@ -13,7 +13,7 @@ function HomeStack() {
                 headerTintColor: "#333",
                 headerTitleAlign: "center",
                 headerStyle: {
-                    backgroundColor: "pink",
+                    backgroundColor: "#fff",
                     height: 80
                 }
             })}
