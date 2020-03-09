@@ -7,9 +7,9 @@ import Navigator from "./Routes/Drawer";
 const getFonts = () => {
     return Font.loadAsync({
         Montserrat: require("./assets/fonts/Montserrat/Montserrat-Regular.ttf"),
-        "Montserrat-Bold": require("./assets/fonts/Montserrat/Montserrat-Bold.ttf"),
-        "Montserrat-Light": require("./assets/fonts/Montserrat/Montserrat-Light.ttf"),
-        "Montserrat-Thin": require("./assets/fonts/Montserrat/Montserrat-Thin.ttf")
+        MontserratBold: require("./assets/fonts/Montserrat/Montserrat-Bold.ttf"),
+        MontserratLight: require("./assets/fonts/Montserrat/Montserrat-Light.ttf"),
+        MontserratThin: require("./assets/fonts/Montserrat/Montserrat-Thin.ttf")
     });
 };
 

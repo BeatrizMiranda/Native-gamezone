@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: "#333",
         letterSpacing: 1,
-        marginRight: '35%'
+        marginRight: "35%"
     },
     hamburguer: {
         marginHorizontal: 30,

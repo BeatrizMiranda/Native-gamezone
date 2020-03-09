@@ -16,6 +16,14 @@ const globalStyles = {
             fontFamily: "Montserrat",
             fontSize: 18,
             color: "#333"
+        },
+        input: {
+            padding: 10,
+            borderBottomColor: "#ddd",
+            borderBottomWidth: 1,
+            fontSize: 18,
+            borderRadius: 6,
+            marginVertical: 10
         }
     }),
     ratings: {
